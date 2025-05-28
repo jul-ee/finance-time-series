@@ -1,6 +1,6 @@
 # 📋 Finance Time Series Classification
 
-본 프로젝트는 이더리움(ETH)의 분당 시계열 데이터를 기반으로 가격 변화 패턴을 분석하고, 라벨링 및 특징 추출 기법을 적용하여 가격 방향성 예측 모델을 구축하는 것을 목표로 합니다. 
+본 프로젝트는 이더리움(ETH)의 분당 시계열 데이터를 기반으로 가격 변화 패턴을 분석하고, 라벨링 및 특징 추출 기법을 적용하여 가격 방향성 분류 모델을 구축하는 것을 목표로 합니다. 
 
 금융 시계열 데이터의 복잡성을 고려하여 정보 누수를 방지하고 효과적인 특징을 설계하는 데 중점을 두었습니다.
 
@@ -87,7 +87,7 @@ Machine Learning:<br>- Modeling: &nbsp;`scikit-learn` (LogisticRegression, Rando
     ├──  RFE CV: Recursive Feature Elimination
     ├──  SFS: Sequential Feature Selection
     └──  SHAP: Shapley Additive explanations
-         ├──  클래스별 summary plot 시각화
+         └──  클래스별 summary plot 시각화
 			   └──  전체 피처 중요도 정렬 → 모델 해석
     
     📂 5. 학습 데이터 저장 및 유틸리티 모듈 구성
