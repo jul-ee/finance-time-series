@@ -27,12 +27,12 @@ Machine Learning:<br>- Modeling: &nbsp;`scikit-learn` (LogisticRegression, Rando
 ## 프로젝트 개요
 
 - Data: &nbsp;이더리움(ETH) 분 단위 시세 (CSV)
-
 - Labeling:
     - Price Change Direction, Using Moving Average, Local Min-Max, Trend Scanning
 - 검증 기법: &nbsp;PurgedKFold 기반 시계열 적합 교차검증
 - 성능 평가 지표: &nbsp;Accuracy, Precision, Recall, AUC
 
+<br>
 <br>
 
 ## 전체 분석 프로세스
@@ -120,27 +120,27 @@ Machine Learning:<br>- Modeling: &nbsp;`scikit-learn` (LogisticRegression, Rando
     │   └──  ROC Curve 시각화 및 AUC 해석
     │
     └── 📁 6-6. 추가 모델 학습 및 성능 비교
-		    ├──  개별 모델(XGBoost, LightGBM) 학습 및 성능 비교
-		    ├──  Ensemble Stacking
-		    │     └──  RF + XGB + LGBM → LogisticRegression
-		    ├──  Threshold 최적화 기반 성능 향상
-		    │     └──  Precision-Recall Curve 기반 F1 최적 지점 선택
-		    ├──  스태킹 모델 최종 성능
-		    │     ├──  Accuracy: 0.8010
-		    │     ├──  Precision: 0.5955
-		    │     ├──  Recall: 0.9636
-	  	  │     └──  AUC: 0.9118
-		    ├──  Confusion Matrix 시각화 및 해석
-		    ├──  ROC Curve (probability 기반) 시각화
-		    │
-		    └──  결과 종합 비교 및 최종 모델 선정 사유
-			       • 개별 모델 대비 전반적인 성능 균형 우수
-			       • 민감한 이벤트 탐지에 강한 재현율 확보
-			       • AUC 기준으로도 안정적인 분류 가능성 확보
-			       → 최종 모델로 StackingClassifier 선정
+        ├──  개별 모델(XGBoost, LightGBM) 학습 및 성능 비교
+        ├──  Ensemble Stacking
+        │     └──  RF + XGB + LGBM → LogisticRegression
+        ├──  Threshold 최적화 기반 성능 향상
+        │     └──  Precision-Recall Curve 기반 F1 최적 지점 선택
+        ├──  스태킹 모델 최종 성능
+        │     ├──  Accuracy: 0.8010
+        │     ├──  Precision: 0.5955
+        │     ├──  Recall: 0.9636
+        │     └──  AUC: 0.9118
+        ├──  Confusion Matrix 시각화 및 해석
+        ├──  ROC Curve (probability 기반) 시각화
+        │
+        └──  결과 종합 비교 및 최종 모델 선정 사유
+             • 개별 모델 대비 전반적인 성능 균형 우수
+             • 민감한 이벤트 탐지에 강한 재현율 확보
+             • AUC 기준으로도 안정적인 분류 가능성 확보
+             → 최종 모델로 StackingClassifier 선정
 ```
 
-<br>
+
 <br>
 
 ## 결론
@@ -164,8 +164,11 @@ Machine Learning:<br>- Modeling: &nbsp;`scikit-learn` (LogisticRegression, Rando
 
 최종 모델: `StackingClassifier (RF + XGB + LGBM → Logistic Regression)`
 
+
 <br>
 <br>
+<br>
+
 
 ## 인사이트 및 회고
 
